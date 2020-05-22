@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -22,12 +22,12 @@
     </ion-list>
 
     <ion-text color="danger">
-      <p [hidden]="supportQuestion.valid || submitted === false" padding-left>
+      <p [hidden]="supportQuestion.valid || submitted === false" class="ion-padding-start">
         Support message is required
       </p>
     </ion-text>
 
-    <div padding>
+    <div class="ion-padding">
       <ion-button expand="block" type="submit">Submit</ion-button>
     </div>
   </form>
